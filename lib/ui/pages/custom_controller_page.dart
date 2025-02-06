@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:reboottalent/ui/pages/candidates_page.dart';
+import 'package:reboottalent/ui/pages/selection_process_page.dart';
 import 'package:reboottalent/ui/pages/home_page.dart';
 import 'package:reboottalent/ui/pages/settings_page.dart';
-import 'package:reboottalent/ui/pages/talent_pool.dart';
+import 'package:reboottalent/ui/pages/candidates_page.dart';
 import 'package:reboottalent/ui/pages/vacancies_page.dart';
 
 class CustomControllerPage extends StatefulWidget {
@@ -25,16 +25,16 @@ class _CustomControllerPageState extends State<CustomControllerPage> {
       label: Text('Home', style: TextStyle(fontSize: 20, color: Colors.white),),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.group_sharp, color: Colors.white,),
-      label: Text('Candidatos', style: TextStyle(fontSize: 20, color: Colors.white),),
+      icon: Icon(Icons.local_fire_department_outlined, color: Colors.white,),
+      label: Text('Processos', style: TextStyle(fontSize: 20, color: Colors.white),),
     ),
     NavigationRailDestination(
       icon: Icon(Icons.bookmark, color: Colors.white,),
       label: Text('Vagas Abertas', style: TextStyle(fontSize: 20, color: Colors.white),),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.view_list_rounded, color: Colors.white,),
-      label: Text('Banco de Talentos', style: TextStyle(fontSize: 20, color: Colors.white),),
+      icon: Icon(Icons.groups, color: Colors.white,),
+      label: Text('Candidatos', style: TextStyle(fontSize: 20, color: Colors.white),),
     ),
     NavigationRailDestination(
       icon: Icon(Icons.settings, color: Colors.white,),
@@ -130,9 +130,9 @@ class _CustomControllerPageState extends State<CustomControllerPage> {
               physics: const NeverScrollableScrollPhysics(),
               children: const [
                 HomePage(),
-                CandidatesPage(),
+                SelectionProcessPage(),
                 VacanciesPage(),
-                TalentPool(),
+                CandidatesPage(),
                 SettingsPage(),
               ],
             ),
