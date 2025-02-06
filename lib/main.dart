@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reboottalent/ui/pages/home_page.dart';
+import 'package:reboottalent/ui/pages/custom_controller_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/' : (context) => const HomePage()
+        '/' : (context) => const CustomControllerPage()
       },
       debugShowCheckedModeBanner: false,
     );
